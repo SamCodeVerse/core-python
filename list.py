@@ -240,37 +240,46 @@ fruits=['mango','Banana',"apple"]
 #     print('username not valid')        
 
 
-tasks=[]
-while True:
-    print('----to do list----')
-    print('1.add task')
-    print('2.view task')
-    print('3.remove task')
-    print('4.exit')
-    choice=int(input('choose option 1-4:'))
-    if choice==1:
-        task=input('enter the text:')
-        tasks.append(task)
-    elif choice==2:
-        if len(tasks)==0:
-            print('no tasks available')
-        else:
-            for i in range(len(tasks)):
-                print(i+1,tasks[i])
-    elif choice==3:
-        if len(tasks)==0:
-            print('no tasks available')
-        else:    
-            print('1.remove by number')
-            print('2.remove by name')
-            a=input('choose')
-            if a=='1':
-                num=int(input('enter the number:'))
-                tasks.pop(num-1)
-            elif a=='2':
-                name=input('enter the name:')
-                tasks.remove(name)    
-    elif choice==4:
-        print('good bye to do list')
-        break
-              
+# tasks=[]
+# while True:
+#     print('----to do list----')
+#     print('1.add task')
+#     print('2.view task')
+#     print('3.remove task')
+#     print('4.exit')
+#     choice=int(input('choose option 1-4:'))
+#     if choice==1:
+#         task=input('enter the text:')
+#         tasks.append(task)
+#     elif choice==2:
+#         if len(tasks)==0:
+#             print('no tasks available')
+#         else:
+#             for i in range(len(tasks)):
+#                 print(i+1,tasks[i])
+#     elif choice==3:
+#         if len(tasks)==0:
+#             print('no tasks available')
+#         else:    
+#             print('1.remove by number')
+#             print('2.remove by name')
+#             a=input('choose')
+#             if a=='1':
+#                 num=int(input('enter the number:'))
+#                 tasks.pop(num-1)
+#             elif a=='2':
+#                 name=input('enter the name:')
+#                 tasks.remove(name)    
+#     elif choice==4:
+#         print('good bye to do list')
+#         break
+
+
+
+# a="this is a python programming"
+
+# b=f.read()
+
+# s=a.split(" ")
+
+# print(s)
